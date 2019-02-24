@@ -56,7 +56,7 @@ spec:
             - "--iptables=true"
             - "--host-ip=$(HOST_IP)"
             - "--node=$(NODE_NAME)"
-            - "--host-interface=cali+"
+            - "--host-interface=eni+"
           env:
             - name: HOST_IP
               valueFrom:
