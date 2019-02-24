@@ -5,7 +5,7 @@ metadata:
   labels:
     name: aws-cli
   annotations:
-    iam.amazonaws.com/role: dummyrole
+    iam.amazonaws.com/role: <ROLE>
 spec:
   containers:
     - image: cgswong/aws:aws
