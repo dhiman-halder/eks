@@ -5,13 +5,11 @@ metadata:
   labels:
     name: aws-cli
   annotations:
-    iam.amazonaws.com/role: <ROLE_ARN>
+    iam.amazonaws.com/role: dummyrole
 spec:
   containers:
-  - image: fstab/aws-cli
-    command:
-      - "/home/aws/aws/env/bin/aws"
-      - "s3"
-      - "ls"
-      - "<BUCKET_NAME>"
-    name: aws-cli
+    - image: cgswong/aws:aws
+      command:
+        - "sleep"
+        - "9999"
+      name: aws-cli
