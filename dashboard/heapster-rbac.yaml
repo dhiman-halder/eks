@@ -7,12 +7,14 @@ rules:
 - apiGroups:
   - ""
   resources:
+  - events
   - pods
   - nodes
   - namespaces
   verbs:
   - get
   - list
+  - update
   - watch
 - apiGroups:
   - extensions
@@ -29,6 +31,9 @@ rules:
   - nodes/stats
   verbs:
   - get
+  - list
+  - update
+  - watch
   
 ---
 kind: ClusterRoleBinding
